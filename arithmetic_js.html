@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+        table{
+
+         background-color:#6495ED;
+         border: solid blue 1px;
+         border-collapse: collapse;
+         width:500px;
+         height:200px;
+         text-align:center;
+
+
+    }
+</style>
+</head>
+<body>
+	<br>
+	<br>
+
+<form name="myform">
+<center><table>
+    <tr>
+        <th>Enter 1st no: <input type="text" name="n1"></th>
+    </tr>
+    <tr>
+        <th>Enter 2nd no: <input type="text" name="n2" ></th>
+    </tr>
+    <tr>
+        <th><input type="button" value="Addition" onclick="add()">
+            <input type="button" value="substraction" onclick="sub()"></th>
+    </tr>
+    <tr>
+        <th><input type="button" value="multiplication" onclick="mul()">
+            <input type="button" value="division" onclick="div()"></th>
+    </tr>
+    <tr>
+        <th>Result:<input type="text" name="result"></th>
+    </tr>
+    <tr>
+    <th>Operation you
+        selected:
+    <select>
+        <option>Addition</option>
+        <option>substraction</option>
+        <option>multiplication</option>
+
+    <option>division</option>
+    </select></th>
+    </tr>
+</table>
+</center>
+</form>
+<script type="text/javascript">
+    function add(){
+        n1=parseInt(myform.n1.value);
+        n2=parseInt(myform.n2.value);
+        result=n1+n2;
+        myform.result.value=result;
+    }
+    function sub(){
+        n1=parseInt(myform.n1.value);
+        n2=parseInt(myform.n2.value);
+        result=n1-n2;
+        myform.result.value=result;
+    }
+    function mul(){
+        n1=parseInt(myform.n1.value);
+        n2=parseInt(myform.n2.value);
+        result=n1*n2;
+        myform.result.value=result;
+    }
+    function div(){
+        n1=parseInt(myform.n1.value);
+        n2=parseInt(myform.n2.value);
+        result=n1/n2;
+        myform.result.value=result;
+    }
+</script>
+
+</body>
+</html>
